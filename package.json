@@ -1,0 +1,9 @@
+{
+  "name": "get-auth-token-from-npmrc",
+  "description": "Convenience module and CLI for extracting the auth token from your ~/.npmrc file",
+  "repository": "https://github.com/nice-registry/get-auth-token-from-npmrc",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "bin": "cli.js"
+}
