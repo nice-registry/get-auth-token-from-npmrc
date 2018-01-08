@@ -4,11 +4,34 @@
 
 Hey! If you know of a better way to do this, please let me know.
 
-## Installation
+## Programmatic Usage
+
+Install it locally:
 
 ```sh
-npm install get-auth-token-from-npmrc --save
+npm i get-auth-token-from-npmrc --save
 ```
+
+Then in your JS file:
+
+```js
+const token = require('get-auth-token-from-npmrc')()
+// xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
+```
+
+If `~/.npmrc` exists and you're logged in to npm, a token is returned.
+
+Otherwise, `null` is returned.
+
+## CLI Usage
+
+Install it globally (or locally depending on your use-case):
+
+```sh
+npm i -g get-auth-token-from-npmrc && get-auth-token-from-npmrc
+```
+
+The token is written to stdout.
 
 ## Dependencies
 
